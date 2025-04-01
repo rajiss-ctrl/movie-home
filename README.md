@@ -1,12 +1,36 @@
-# React + Vite
+# Movie Explorer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A movie discovery app built using **Vite React** that allows users to search for movies, view movie details, and save trending movies to Appwrite. The app is fully responsive and styled with **TailwindCSS** for a sleek, modern UI.
 
-Currently, two official plugins are available:
+![Project Screenshot](assets/screenshot.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- **Optimized Search Functionality**: Uses `React` hooks and efficient state management for smooth movie searches.
+- **Fetch Movies**: Fetches data from **The Movie Database (TMDb)** API and displays movie details such as title, overview, release date, language, and rating.
+- **Appwrite Integration**: Stores trending movies in the Appwrite database to allow users to save their favorite movies.
+- **Responsive UI**: Fully responsive design powered by **TailwindCSS** to ensure great user experience on all devices.
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Tools & Technologies Used
+
+- **Vite React**: Fast build tool and development server for React projects.
+- **TMDb API**: Used to fetch movies and detailed information about them.
+- **Appwrite**: Provides backend services to store and manage trending movies.
+- **TailwindCSS**: Utility-first CSS framework used for styling the app.
+
+## Getting Started
+
+### Prerequisites
+
+Before you start, make sure you have the following tools installed:
+
+- [Node.js](https://nodejs.org/) (v14 or higher)
+- [Vite](https://vitejs.dev/)
+- [Appwrite account](https://appwrite.io/)
+- [TMDB account](https://appwrite.io/)
+
+### Installation
+
+1. Clone the repository to your local machine:
+   ```bash
+   git clone https://github.com/rajiss-ctrl/movie-home.git
