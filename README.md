@@ -2,7 +2,7 @@
 
 A movie discovery app built using **Vite React** that allows users to search for movies, view movie details, and save trending movies to Appwrite. The app is fully responsive and styled with **TailwindCSS** for a sleek, modern UI.
 
-![Project Screenshot](/assets/screenshot.png)
+![Project Screenshot](/public/screenshot.png)
 
 ## Features
 
