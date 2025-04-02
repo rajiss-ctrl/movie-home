@@ -93,7 +93,7 @@ const Home = () => {
       <div className="pattern"/>
 
       <div className="wrapper">
-        <header>
+        <header className=''>
           <img src="./hero.png" alt="Hero Banner" />
           <h1>Find <span className="text-gradient">Movies</span> You will Enjoy Without the Hassle</h1>
 
@@ -102,21 +102,22 @@ const Home = () => {
 
         {trendingMovies.length > 0 && (
           <section className="trending">
-            <h2>Trending Movies</h2>
-
-            <ul>
-              {trendingMovies.map((movie, index) => (
-                <li key={movie.$id}>
-                  <p>{index + 1}</p>
-                  <img src={movie.poster_url} alt={movie.title} />
-                </li>
-              ))}
-            </ul>
+            <h2 className='mb-24 text-center'>Trending Movies</h2>
+            <div className="curved-mask">
+              <ul>
+                {trendingMovies.map((movie, index) => (
+                  <li key={movie.$id}>
+                    <p>{index + 1}</p>
+                    <img src={movie.poster_url} alt={movie.title} />
+                  </li>
+                ))}
+              </ul>
+            </div>
           </section>
         )}
 
-        <section className="all-movies">
-          <h2>All Movies</h2>
+        <section className="all-movies mt-10">
+          <h2 className='text-center'>All Movies</h2>
 
           {isLoading ? (
             <Spinner />

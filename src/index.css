@@ -66,8 +66,11 @@ body{
     @apply mt-20;
 
     & ul {
-      @apply flex flex-row overflow-y-auto gap-5 -mt-10 w-full hide-scrollbar;
+      @apply flex flex-row overflow-y-auto gap-2 -mt-10 w-full hide-scrollbar;
     }
+    /* & ul::before {
+      @apply content-[''] bg-white w-screen h-[100px] absolute -top-[50px] rounded-[50%] left-0;
+    } */
 
     & ul li {
       @apply min-w-[230px] flex flex-row items-center;
@@ -78,9 +81,24 @@ body{
     }
 
     & ul li img {
-      @apply w-[127px] h-[163px] rounded-lg object-cover -ml-3.5;
+      @apply w-[60%] h-[100%] object-cover -ml-3.5;
     }
+    /* & ul li img {
+      @apply w-[127px] h-[163px] rounded-lg object-cover -ml-3.5;
+    } */
   }
+
+
+  .curved-mask{
+    @apply relative z-50;
+  }
+  
+   .curved-mask::before{
+      @apply content-[''] bg-primary w-full h-[100px] absolute inset-[-50px_0_0] rounded-[50%] left-0;
+    }
+   .curved-mask::after{
+      @apply content-[''] bg-primary w-full h-[100px] absolute inset-[0_0_-50px] top-[unset] rounded-[50%] left-0;
+    }
 
   .search {
     @apply w-full bg-light-100/5 px-4 py-3 rounded-lg mt-10 max-w-3xl mx-auto;
@@ -99,7 +117,7 @@ body{
   }
 
   .all-movies {
-    @apply space-y-9;
+    @apply space-y-9 px-4 lg:px-10;
 
     & ul {
       @apply grid grid-cols-1 gap-5 xs:grid-cols-2 md:grid-cols-3 lg:grid-cols-4;

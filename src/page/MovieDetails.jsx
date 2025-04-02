@@ -65,9 +65,9 @@ const MovieDetails = () => {
   }
 
   return (
-    <div className="movie-details">
-      <div className="my-2">
-        <Link to="/" className="back-button text-white">← Back to Home</Link>
+    <div className="movie-details px-5 md:px-16 py-12">
+      <div className="my-2 text-center">
+        <Link to="/" className="back-button text-white ">← Back to Home</Link>
       </div>
 
       <div className="details-container">
@@ -77,7 +77,7 @@ const MovieDetails = () => {
             alt={movie.title} 
             className="movie-poster rounded-xl"
           />
-          <div className="text-white text-left py-8 md:px-6">
+          <div className="text-white text-left py-8 md:px-10">
             <h1 className="mb-5 text-6xl">{movie.title}</h1>
             <p className="text-lg"><strong>Overview:</strong> {movie.overview || 'No overview available.'}</p>
 
